@@ -6,24 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/main.css" rel="stylesheet">
-	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
 	<link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
 
-
 	<title>Face</title>
-	<style type="text/css">
-		* {
-	box-sizing: border-box;
-}
-div{
-	border:1px solid red;
-	min-height:2em;
-}
-	</style>
-</head>
+
 <body class="container">
 
-	<header>
+	<!-- Header -->
+
+	<header class="row">
 				<img class="logo-face img-fluid" src="assets/images/logo.png" alt="">
 		<!--Barre de navigation-->
 			<navbar class="navbar">
@@ -35,34 +26,53 @@ div{
 				</ul>
 			</navbar>
 	</header>
-
 	<div class="contact">
 		<h2>CONTACT</h2>
 			<div class="presentation row">
 				<div class="presentation-text col-md-8">
 					<form method="post" action="">
-						<label for="nom">NOM</label>
+						<label for="nom">NOM</label><br>
 						<input type="text" id="nom">
 						<br>
-						<label for="prenom">PRENOM</label>
+						<label for="prenom">PRENOM</label><br>
 						<input type="text" id="prenom">
 						<br>
-						<label for="e-mail">E-MAIL</label>
+						<label for="e-mail">E-MAIL</label><br>
 						<input type="text" id="e-mail">
 						<br>
-						<label for="message">MESSAGE</label>
+						<label for="message">MESSAGE</label><br>
 						<input type="text" id="message">
 					</form>
 				</div>
-			<div class="presentation-text col-md-4">
+			<div class="robot presentation-text col-md-4">
 				<img class="img-fluid"  src= "assets/images/environnement.jpg" alt="">
 				<img class="img-fluid" src="assets/images/robot.png">
-				<div class="envoyer">
-			<button class="btn btn-dark">ENVOYER</button>
-				</div>
-
+			<button class="btn-envoyer btn-dark">ENVOYER</button>
+				
 			</div>
 	</div>
 			<img class="img-fluid" src="assets/images/environnement.jpg">
+
+
+<footer>
+		<!--Logo de Face -->
+		<img class=logo-face img-fluid src="assets/images/logo.png"	  alt="">
+		
+		<!--Coordonnées-->
+		<div class="adresse">
+	  
+	  		<p><i class="fa fa-home" aria-hidden="true"></i> 23 rue d'Aiguillon 35200 Rennes <br>
+		    <i class="fas fa-phone" aria-hidden="true"></i> 02 99 86 89 26 <br>
+	 		<i class="far fa-desktop" aria-hidden="true"></i> www.face.bzh <br>
+			  <i class="fab fa-twitter-square"></i>
+	  		  <i class="fab fa-facebook"></i>
+  			  <i class="fas fa-envelope-square"></i></p>
+         	</div>
+        </div>
+	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 </html>

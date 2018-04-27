@@ -14,7 +14,7 @@
 
 	<!-- Header -->
 
-	<header>
+	<header class="row">
 				<img class="logo-face img-fluid" src="assets/images/logo.png" alt="">
 		<!--Barre de navigation-->
 			<navbar class="navbar">
@@ -27,24 +27,24 @@
 			</navbar>
 	</header>
 
-	<div class="presentation-row row">
+	<div class="intro presentation-row row">
 		<div class="presentation-text col-xs-12 col-md-4">
 
 			<img class="img-fluid"  src= "assets/images/environnement.jpg" alt="">
 			<img class="img-fluid" src="assets/images/logo.png"
 			  alt="">
-			</p>
 		</div>
-		<div class="presentation-text col-xs-12 col-md-8">
-			<h1> Fondation Agir contre l'exclusion</h1>
+		<div class="introFACE presentation-text col-xs-12 col-md-8">
+			<h1> Fondation Agir contre l'exclusion<br>(fondation.org)</h1>
 				<p>	
 
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesque, lacus justo consequat risus, nec fermentum sem nulla ac sapien. Maecenas pharetra urna et elit sodales, vitae vestibulum massa porta. Donec id elit neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesque, lacus justo consequat risus, nec fermentum sem nulla ac sapien. Maecenas pharetra urna et elit sodales, vitae vestibulum massa porta. Donec id elit neque.
 				</p>
 			</div>
-	</div>
+		</div>
 
-	<h1>A LA UNE</h1>
+	<hr class="ligne-orange" />
+	<h2>à la une</h2>
 	<!-- Début du carousel -->
 
 	<div class="presentation row">
@@ -74,26 +74,28 @@
 			</div>	
 		</div>
 	</div>
-	<div class ="presentation row">
-		<div class="presentation-text col-xs-12 col-md-6">
+	<div class ="mentor presentation row">
+		<div class=" mentor-img presentation-text col-xs-12 col-md-4">
 			<img class="img-fluid" src= "assets/images/environnement.jpg" alt="">
 		</div>
 
-		<div class="info presentation-text col-xs-12 col-md-6">	
-				<h1>A LA UNE</h1>
+		<div class="info presentation-text col-xs-12 col-md-8">	
+				<span class="une">à la une</span>
 
-					<p>	 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesquelacus justo consequat risus, nec fermentum sem nulla ac sapien. Maecenas pharetra urna et elit sodales, vitae vestibulum massa porta. Donec id elit neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesque, lacus justo consequat risus, nec fermentum sem nulla ac sapien. Maecenas pharetra urna et elit sodales, vitae vestibulum massa porta. Donec id elit neque.
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesquelacus justo consequat risus, nec fermentum sem nulla ac sapien. Maecenas pharetra urna et elit sodales, vitae vestibulum massa porta. Donec id elit neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesque, lacus justo consequat risus, nec fermentum sem nulla ac sapien. Maecenas pharetra urna et elit sodales, vitae vestibulum massa porta. Donec id elit neque.
 				<br>		
 				<button class="btn-plus btn btn-dark">Voir plus + </button>
 				
 		</div>
 	</div>
+	<hr class="ligne-orange" />
 	<!-- bootstrap "Action"-->
 	<div class="row block-action">
 		<div class="col-md-8 action">
 			<div class="d-flex">
-						<div class="presentation-text col-md-6">
-							<h1> ACTIONS </h1>
+						<div class="action1 presentation-text col-md-6">
+							<span class="action2"> ACTIONS </span>
+							<hr class="ligne-bleue" />
 							<p> QUELQUES CHIFFRES EN 2015</p>
 						</div>
 					<div class="presentation-text col-md-3 emploi">
@@ -142,7 +144,7 @@
 
 		<div class="col-md-4 fil-social">
 		<div class="row">
-			<div class="col-md-12 news1">
+			<div class="col-md-12">
 			 	
 				<p><i class="news1 fab fa-twitter-square" aria-hidden="true"></i>
 				Slip ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesque.. - FACE RENNES (@FaceRennes) Mois jour, année</p>	
@@ -192,7 +194,6 @@
 		</div>
 	</div>
 
-	</body>
 
 	<footer>
 		<!--Logo de Face -->
@@ -200,21 +201,19 @@
 		
 		<!--Coordonnées-->
 		<div class="adresse">
-	  <i class="fa fa-home" aria-hidden="true"></i>
-	  <p class="footer">23 rue d'Aiguillon 35200 Rennes</p>
-	  <i class="fas fa-phone" aria-hidden="true"></i><p class="footer">02 99 86 89 26</p>
-	  <i class="far fa-desktop" aria-hidden="true"></i><p class="footer">www.face.bzh</p>
-		  <div class="icon">
+	  
+	  		<p><i class="fa fa-home" aria-hidden="true"></i> 23 rue d'Aiguillon 35200 Rennes <br>
+		    <i class="fas fa-phone" aria-hidden="true"></i> 02 99 86 89 26 <br>
+	 		<i class="far fa-desktop" aria-hidden="true"></i> www.face.bzh <br>
 			  <i class="fab fa-twitter-square"></i>
 	  		  <i class="fab fa-facebook"></i>
-  			  <i class="fas fa-envelope-square"></i>
-         </div>
-
-         <div class="auteur">
-         	<p>Lise Poirier de la Code Académie</p>
-
+  			  <i class="fas fa-envelope-square"></i></p>
+         	</div>
+        </div>
 	</footer>
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
