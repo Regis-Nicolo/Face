@@ -15,16 +15,18 @@
 	<!-- Header -->
 
 	<header class="row">
-				<img class="logo-face img-fluid" src="assets/images/logo.png" alt="">
+			<div class="logo-header">
+				<img class="logo img-fluid" src="assets/images/logo-white.svg" alt="">
+			</div>
 		<!--Barre de navigation-->
-			<navbar class="navbar">
+			<nav class="navbar">
 		
 				<ul>
-					<li><a href="home.html">HOME</a></li>
+					<li><a class="active" href="home.html">HOME</a></li>
 					<li><a href="association.html">L'ASSOCIATION</a></li>
 					<li><a href="contact.html">CONTACT/NOUS SITUER</a></li>
 				</ul>
-			</navbar>
+			</nav>
 	</header>
 
 	<div class="intro presentation-row row">
@@ -98,14 +100,15 @@
 							<hr class="ligne-bleue" />
 							<p> QUELQUES CHIFFRES EN 2015</p>
 						</div>
-					<div class="presentation-text col-md-3 emploi">
-					<span>200</span>
-					<p> Mises à l'emploi</p>
-					</div>
-					<div class="presentation-text col-md-3 projet">
-						<span>15</span> 
-						<p> Projets <br> innovants</p>		
+						<div class="presentation-text col-md-3 content-chiffre emploi">
+						<span>200</span>
+						<p> Mises à l'emploi</p>
 						</div>
+						<div class="presentation-text col-md-3 projet content-chiffre">
+						<span class="chiffre-bleu">15</span> 
+						<p> Projets <br> innovants</p>	
+						</div>
+					
 			</div>
 
 	<div class="d-flex">
@@ -115,19 +118,20 @@
 					</div>
 				</div>
 				<div class="presentation-text col-md-6">	<div class="col-md-12">
-				<div class="d-flex">
-						<div class="presentation-text col-md-6 admin">
-							<span>15</span>
+				<div class="chiffre d-flex">
+						<div class="content-chiffre presentation-text col-md-6">
+							<span class="chiffre-bleu">
+							15</span>
 							<p>Administrateurs<br>impliqués</p>
 						</div>
-						<div class="presentation-text col-md-6 formation">
+					<div class="presentation-text col-md-6 content-chiffre formation">
 							<span>80</span>
 							<p>Personnes<br>formées</p>
 						</div>
 					</div>
 						<div class="presentation-text d-flex">
-							<div class="partenaires">
-								<span>500</span>
+							<div class="content-chiffre partenaires">
+								<span class="chiffre-bleu">500</span>
 								<p>Partenaires</p>
 							</div>
 						</div>
@@ -135,7 +139,7 @@
 				</div>
 			</div>
 			<div class="action presentation-row d-flex">
-			<div class="presentation-text col-md-12 quartier">
+			<div class="presentation-text col-md-12 quartier content-chiffre">
 				<span>69%</span>
 				<p>Du public accompagné en 2015 est issu <br> d'un quartier prioritaire</p>
 			</div>
@@ -147,22 +151,24 @@
 			<div class="col-md-12">
 			 	
 				<p><i class="news1 fab fa-twitter-square" aria-hidden="true"></i>
-				Slip ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesque.. - FACE RENNES (@FaceRennes) Mois jour, année</p>	
+				Slip ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesque.. - FACE RENNES (@FaceRennes) Mois jour, année</p><br>	
 			</div>
 			<div class="col-md-12">
 				
 				<p><i class="fab fa-facebook" aria-hidden="true"></i>
-				Slip ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesque.. - FACE RENNES (@FaceRennes) Mois jour, année</p>	
+				Slip ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesque.. - FACE RENNES (@FaceRennes) Mois jour, année</p><br>	
 			</div>
 			<div class="col-md-12">
 			 	
 				<p><i class="fab fa-twitter-square" aria-hidden="true"></i>
-				Slip ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesque.. - FACE RENNES (@FaceRennes) Mois jour, année</p>	
+				Slip ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis, urna non accumsan pellentesque.. - FACE RENNES (@FaceRennes) Mois jour, année</p><br>	
 			</div>
 		</div>
 		</div>
 	</div>
 </div>
+
+<h2> Ils nous soutiennent</h2>
 	<!-- Carousel "ils nous soutiennent" -->
 
 	<div class="presentation-row row">
@@ -197,17 +203,18 @@
 
 	<footer>
 		<!--Logo de Face -->
-		<img class=logo-face img-fluid src="assets/images/logo.png"	  alt="">
-		
+		<div class="logo">
+			<img class=logo-face img-fluid src="assets/images/logo-white.svg"	  alt="">
+		</div>
 		<!--Coordonnées-->
 		<div class="adresse">
 	  
-	  		<p><i class="fa fa-home" aria-hidden="true"></i> 23 rue d'Aiguillon 35200 Rennes <br>
+	  		<p class><i class="fa fa-home" aria-hidden="true"></i>23 rue d'Aiguillon 35200 Rennes<br>
 		    <i class="fas fa-phone" aria-hidden="true"></i> 02 99 86 89 26 <br>
-	 		<i class="far fa-desktop" aria-hidden="true"></i> www.face.bzh <br>
-			  <i class="fab fa-twitter-square"></i>
-	  		  <i class="fab fa-facebook"></i>
-  			  <i class="fas fa-envelope-square"></i></p>
+		    <i class="fa fa-desktop" aria-hidden="true"></i> www.face.bzh <br>
+			  <button class="icon"><i class="fab fa-twitter-square"></i></button>
+	  		  <button class="icon"><i class="fab fa-facebook"></i></button>
+  			  <button class="icon"><i class="fas fa-envelope-square"></i></button></p>
          	</div>
         </div>
 	</footer>

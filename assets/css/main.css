@@ -1,11 +1,40 @@
+@font-face{
+	font-family:"Gotham";
+	src:url('../fonts/GOTHAM/GOTHAM-MEDIUM_0.OTF');
+}
 body{
 	background-color: #EFEFEF;
+	font-family:"Gotham";
+}
+@media only screen and (min-width: 479px) {
+	.container{
+		width: 450px;
+	}
 }
 
+@media only screen and (min-width: 768px){
+	.container{
+		width: 850px;
+	}
+
+
+}
+@media only screen and (min-width: 992px){
+	.container{
+		width: 950px;
+	}
+
+}
+@media only screen and (min-width: 1200px){
+	.container{
+		width: 1150px;
+	}
+
+}
 header{
-	background-color: #333333;
+	background-color: #353334;
 	display:flex;
-	height: 45px;
+	height: 3.5em;
 }
 header ul {
 	display:flex;
@@ -16,21 +45,19 @@ header ul {
 html{
 	width:100%;
 }
-.logo-face{
-	width:160px;
-	height: 60px;
+.logo-header{
+	padding-top: 1.25em;
 }
 
-.navbar{
+.navbar {
 	display:flex;
-	margin-left: 110px;
+	height:3.5em;
 }
 .navbar ul li{
 	list-style-type: none;
 	display: inline-block;
-	margin: 5px;
-	padding-left: 20px;
-	padding-bottom: 10px;
+	margin: 0em;
+	padding-left: 1.25em;
 }
 
 .navbar ul li a{
@@ -38,18 +65,23 @@ html{
 	font-weight: 500;
 }
 
-.navbar ul li  a:hover{
+.navbar ul li a:hover,
+.navbar ul li a.active{
 	color : rgb(36,136,143);
 	font-weight: bold;
 	text-decoration: none;
 } 
-
+.navbar ul li a:active{
+	color : rgb(36,136,143);
+	font-weight: bold;
+	text-decoration: none;
+}
 .presentation-row{
 	margin-top:0;
 	padding: 0;
 }
 .intro{
-	margin-top: 20px;
+	margin-top: 5em;
 }
 
 .presentation-text{
@@ -58,7 +90,7 @@ html{
 	background-color: #FFF;
 	box-sizing: border-box;
 	min-height:2em;
-	border: 3px solid #EFEFEF;
+	border: 0.2em solid #EFEFEF;
 }
 .img-fluid{
 
@@ -68,24 +100,29 @@ html{
 }
 h1{
 	color:rgb(36,136,143);
-	font-size: 2em;
+	font-size: 2.2em;
 }
 h2{
-	margin: 20px 0;
+	margin: 1.25em 0;
 	font-size:2em;
 	text-transform: uppercase;
 	color: rgb(36,136,143);
 }
+
+h3{
+	font-size: 1.2em;
+	font-weight:bold;
+}
 hr{
 	padding:0;
-	margin:0 0 15px 0;
+	margin:0 0 1em 0;
 }
 .ligne-bleue{
 	color:rgb(36,136,143);
 	background:rgb(36,136,143);
 }
 .ligne-orange{
-	margin:20px 0;
+	margin:1em 0;
 	background:rgba(237,151,103,1);
 }
 .ligne-blanche{
@@ -93,11 +130,11 @@ hr{
 	background-color: #FFF;
 }
 .introFACE{
-	padding:10px;
+	padding:0.6em;
 }
 
 .mentor{
-	margin-top: 20px;
+	margin-top: 1.25em;
 	color:#FFF;
 } 
 .mentor-img{
@@ -112,7 +149,7 @@ hr{
 
 .fil-social{
 	background: rgb(36,136,143);
-	padding: 10px;
+	padding: 0.6em;
 	color: #FFF;
 	
 }
@@ -122,12 +159,16 @@ hr{
 
 .info{
 	background-color: rgb(36,136,143);
-	padding-left: 10px;
+	padding-left: 1em;
 }
 .btn-plus {
+	margin-top: 1em;
+	padding: 0.3em 3em;
+	font-size: 1.7em;
 	text-align: center;
 	background-color: #FFF;
 	color: rgb(36,136,143);
+	border: none;
 }
 .action{
 	padding:0;
@@ -135,23 +176,22 @@ hr{
 	color: #333 333;
 }
 .action1{
-	padding: 10px;
+	padding: 0.6em;
 }
 .action2{
 	text-transform: uppercase;
 	font-weight: bold;
 }
+
 .emploi{
 	background-color: rgb(36,136,143);
+	text-align: center;
 	color: #FFF;
 }
 .fil-social{
 	background-color: rgb(36,136,143);
 	color: #FFF;
-}
-.emploi{
-	text-align: center;
-	color: #FFF;
+	padding: 1em;
 }
 .projet{
 	text-align: center;
@@ -164,12 +204,24 @@ hr{
 .banniere > img {
 	margin:auto;
 }
-.admin{
+.chiffres{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.content-chiffre{
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.3em;
 }
 .formation{
 	background-color: rgb(36,136,143);
 	text-align: center;	
+	vertical-align: middle;	
 	color: #FFF;
 }
 .partenaires{
@@ -183,44 +235,133 @@ hr{
 }
 span{
 	font-size: 3em;
+	font-weight: bold;
+}
+.chiffre-bleu{
+	color : rgb(36,136,143);
 }
 
 .block-action{
-	margin:20px -15px;
+	margin:1.25em -1em;
 }
 .d-flex{
 	width: 100%;
 }
+.intro-faceRennes{
+	margin-top: 1.25em;
+}
+.faceRennes{
+	padding: 1.5em;
+}
 .mission{
 	background-color: rgb(36,136,143);	
 	color: #FFF;
-	padding: 15px;
+	padding: 1em;
 }
 
-h3{
-	font-size: 1.5em;
+.team{
+	position: relative;
+}
+.overlay{
+	background-color: rgb(36,136,143);	
+	color: #FFF;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+	overflow: hidden;
+	width: 100%;
+	bottom:0;
+	left: 0;
+	right: 0;
+	height: 0;
+	opacity:0;
+	position: absolute;
+
+}
+.team:hover .overlay {
+	opacity:1;
+	height: 100%;
+}
+.content-equipe{
+	font-size: 0.27em;
+	text-align: center;
+	display: block;
+	
+}
+.contact{
+	margin-top: 2em;
+	padding-left: 1em;
+	margin-bottom: -1em;
+	border: 0;
+}
+
+.formulaire{
+	border: 0;
 }
 
 label{
-	margin-top: 10px;
+	margin-top: 0.6em;
+	margin-left: 1em;
 	color: rgb(36,136,143);
+}	
+input{
+	margin-left: 1em;
+	width: 95%;	
+	border: 1px solid rgb(36,136,143);
+}
+input#message{
+	height: 7em;
+	margin-bottom: 1em;
+}
+
+.carte{
+	margin: 1em;
+	margin-top: 2.6em;
+	width: 90%;	
+}
+.robot{
+	margin: 1em;
+	margin-top: 3em;
+	width: 90%;	
 }
 
 .btn-envoyer.btn-dark{ 
-	margin-top: 10px;
+	margin-left: 1em;		
+	padding: 0.6em 2em;
 	text-align: center;
 	background-color: rgb(36,136,143);
 	color: #FFF;	
+	border: none;
+}
+.batiment{
+	margin-top: 1.25em;
 }
 footer{
-	margin-top: 20px;
+	margin-top: 1.25em;
 	display: flex;
-	padding-top: 15px;
+	padding-top: 2em;
 	width: 100%;
-	background-color: #333333;
-	height: 120px;
+	background-color: #353334;
+	height: 10em;
 }
 .adresse{
-	color: #F5F5F5;
-	margin-left: 15px;
+
+	color: #DDDDDD;
+	margin-left: 2em;
+}
+.icon{
+	background: #FFF;
+	border-radius: 1em;
+	margin-top: 0.2em;
+}
+.logo{
+	background-color: #292929;
+	margin-left: 3em;
+	width: 15em;
+}
+.logo-face{
+	width: 15em;	
+	height: auto;
 }
