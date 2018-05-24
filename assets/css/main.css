@@ -2,34 +2,12 @@
 	font-family:"Gotham";
 	src:url('../fonts/GOTHAM/GOTHAM-MEDIUM_0.OTF');
 }
+html{
+	width:100%;
+}
 body{
 	background-color: #EFEFEF;
 	font-family:"Gotham";
-}
-@media only screen and (min-width: 479px) {
-	.container{
-		width: 450px;
-	}
-}
-
-@media only screen and (min-width: 768px){
-	.container{
-		width: 850px;
-	}
-
-
-}
-@media only screen and (min-width: 992px){
-	.container{
-		width: 950px;
-	}
-
-}
-@media only screen and (min-width: 1200px){
-	.container{
-		width: 1150px;
-	}
-
 }
 header{
 	background-color: #353334;
@@ -42,8 +20,61 @@ header ul {
 	justify-content: center;
 	margin:0;
 }
-html{
-	width:100%;
+h1{
+	color:rgb(36,136,143);
+	font-size: 2.2em;
+}
+h2{
+	margin: 1.25em 0;
+	font-size:2em;
+	text-transform: uppercase;
+	color: rgb(36,136,143);
+	width: 100%;
+}
+
+h3{
+	font-size: 1.2em;
+	font-weight:bold;
+}
+hr{
+	padding:0;
+	margin:0 0 1em 0;
+}
+
+span{
+	font-size: 3.4em;
+	font-weight: bold;
+}
+label{
+	margin-top: 0.6em;
+	margin-left: 1em;
+	color: rgb(36,136,143);
+}	
+input{
+	margin-left: 1em;
+	width: 95%;	
+	border: 1px solid rgb(36,136,143);
+}
+input#message{
+	height: 7em;
+	margin-bottom: 1em;
+}
+footer{
+	margin-top: 1.25em;
+	display: flex;
+	padding-top: 2em;
+	width: 100%;
+	background-color: #353334;
+	height: 10em;
+}
+
+body .ligne{
+	margin: 2em -1em;
+	background:rgba(237,151,103,1);
+}
+
+.basis100 {
+	flex-basis:100%;
 }
 .logo-header{
 	padding-top: 1.25em;
@@ -52,11 +83,11 @@ html{
 .navbar {
 	display:flex;
 	height:3.5em;
+	margin-left: 2em;
 }
 .navbar ul li{
 	list-style-type: none;
 	display: inline-block;
-	margin: 0em;
 	padding-left: 1.25em;
 }
 
@@ -92,43 +123,14 @@ html{
 	min-height:2em;
 	border: 0.2em solid #EFEFEF;
 }
-.img-fluid{
 
-}
-.img-fluid > img{
-
-}
-h1{
-	color:rgb(36,136,143);
-	font-size: 2.2em;
-}
-h2{
-	margin: 1.25em 0;
-	font-size:2em;
-	text-transform: uppercase;
-	color: rgb(36,136,143);
-}
-
-h3{
-	font-size: 1.2em;
-	font-weight:bold;
-}
-hr{
-	padding:0;
-	margin:0 0 1em 0;
-}
-.ligne-bleue{
+.presentation-text .ligne{
 	color:rgb(36,136,143);
 	background:rgb(36,136,143);
+	margin: 0 0 1em 0;
 }
-.ligne-orange{
-	margin:1em 0;
-	background:rgba(237,151,103,1);
-}
-.ligne-blanche{
-	color: #FFF;
-	background-color: #FFF;
-}
+
+
 .introFACE{
 	padding:0.6em;
 }
@@ -143,10 +145,6 @@ hr{
 .mentor-img > img {
 	margin:auto;
 }
-.une{
-	text-transform: uppercase;
-}
-
 .fil-social{
 	background: rgb(36,136,143);
 	padding: 0.6em;
@@ -172,14 +170,16 @@ hr{
 }
 .action{
 	padding:0;
-	font-size: 0.8em;
+	font-size: 1em;
 	color: #333 333;
 }
 .action1{
-	padding: 0.6em;
+	padding: 3em 1em;
+	font-size: 1em;
 }
 .action2{
 	text-transform: uppercase;
+	font-size: 1em;
 	font-weight: bold;
 }
 
@@ -216,7 +216,7 @@ hr{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.3em;
+	font-size: 1.1em;
 }
 .formation{
 	background-color: rgb(36,136,143);
@@ -225,30 +225,44 @@ hr{
 	color: #FFF;
 }
 .partenaires{
-	display:block;
-	margin:0 auto;
+display: block;
+margin: 0 auto;
+
 }
 .quartier{
 	background-color: rgb(36,136,143);	
 	text-align: center;
 	color: #FFF;
 }
-span{
-	font-size: 3em;
-	font-weight: bold;
-}
+
 .chiffre-bleu{
 	color : rgb(36,136,143);
 }
-
 .block-action{
 	margin:1.25em -1em;
 }
+.fd-row{
+	flex-direction: row;
+	display:flex;
+	margin-top: 2em; 
+}
+.res-sociaux{
+	margin: 0 1.5em;
+}
+.fab.fa-twitter{
+	font-size:1.3em;
+	margin-left:0.3em;
+}
+.fab.fa-facebook-f{
+	font-size: 1.5em;
+	margin-left: 0.3em;
+}
+
 .d-flex{
 	width: 100%;
 }
 .intro-faceRennes{
-	margin-top: 1.25em;
+	margin-top: 5em;
 }
 .faceRennes{
 	padding: 1.5em;
@@ -258,9 +272,14 @@ span{
 	color: #FFF;
 	padding: 1em;
 }
+.mission .ligne{
+	background-color: #FFF;
+}
 
 .team{
 	position: relative;
+	margin-left:  2em;
+	margin-bottom: 0.5em;
 }
 .overlay{
 	background-color: rgb(36,136,143);	
@@ -285,13 +304,46 @@ span{
 	height: 100%;
 }
 .content-equipe{
-	font-size: 0.27em;
+	font-size: 0.2em;
 	text-align: center;
 	display: block;
-	
 }
+.logo-partenaires{
+	background-color: rgb(36,136,143);
+	margin: 1em;
+	margin-left: 2em;
+	padding: 0.3em;
+	display: flex;
+	flex-direction: row;	
+	flex-wrap: wrap;
+	border: none;
+}
+.partenaires-titre{
+	color: #EEE;
+	font-size: 1.3em;
+	margin: 1.25em auto;
+	text-align: center;	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 1.3em;
+}
+.img-large{
+	height: 8em;
+	width: 25em;
+	padding: 0.3em;
+	margin:auto;
+}
+.img-small{
+	height: 8em;
+	width: 10em;
+	background-color: rgb(36,136,143);
+	padding: 0.3em;
+	border: none;
+}
+
 .contact{
-	margin-top: 2em;
+	margin-top: 5em;
 	padding-left: 1em;
 	margin-bottom: -1em;
 	border: 0;
@@ -299,22 +351,9 @@ span{
 
 .formulaire{
 	border: 0;
+	padding-bottom: 2em; 
 }
 
-label{
-	margin-top: 0.6em;
-	margin-left: 1em;
-	color: rgb(36,136,143);
-}	
-input{
-	margin-left: 1em;
-	width: 95%;	
-	border: 1px solid rgb(36,136,143);
-}
-input#message{
-	height: 7em;
-	margin-bottom: 1em;
-}
 
 .carte{
 	margin: 1em;
@@ -338,14 +377,7 @@ input#message{
 .batiment{
 	margin-top: 1.25em;
 }
-footer{
-	margin-top: 1.25em;
-	display: flex;
-	padding-top: 2em;
-	width: 100%;
-	background-color: #353334;
-	height: 10em;
-}
+
 .adresse{
 
 	color: #DDDDDD;
@@ -364,4 +396,30 @@ footer{
 .logo-face{
 	width: 15em;	
 	height: auto;
+}
+
+@media only screen and (min-width: 479px) {
+	.container{
+		width: 450px;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.container{
+		width: 750px;
+	}
+
+
+}
+@media only screen and (min-width: 992px){
+	.container{
+		width: 950px;
+	}
+
+}
+@media only screen and (min-width: 1200px){
+	.container{
+		width: 1150px;
+	}
+
 }
