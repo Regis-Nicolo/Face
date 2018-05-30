@@ -1,3 +1,4 @@
+
 @font-face{
 	font-family:"Gotham";
 	src:url('../fonts/GOTHAM/GOTHAM-MEDIUM_0.OTF');
@@ -8,6 +9,7 @@ html{
 body{
 	background-color: #EFEFEF;
 	font-family:"Gotham";
+	margin: 0;
 }
 header{
 	background-color: #353334;
@@ -62,7 +64,6 @@ input#message{
 footer{
 	margin-top: 1.25em;
 	display: flex;
-	padding-top: 2em;
 	width: 100%;
 	background-color: #353334;
 	height: 10em;
@@ -72,13 +73,24 @@ body .ligne{
 	margin: 2em -1em;
 	background:rgba(237,151,103,1);
 }
-
+body .page{
+	margin: auto 2.5;
+}
 .basis100 {
 	flex-basis:100%;
 }
 .logo-header{
+	width: 12em;
 	padding-top: 1.25em;
+	margin-left: 2.5em;
 }
+.logo-header img {
+	width: 100%;
+	vertical-align: middle;
+	border-style: none;
+	background-color: #292929;0
+}
+
 
 .navbar {
 	display:flex;
@@ -382,6 +394,7 @@ margin: 0 auto;
 
 	color: #DDDDDD;
 	margin-left: 2em;
+	padding-top: 2em;
 }
 .icon{
 	background: #FFF;
@@ -390,18 +403,19 @@ margin: 0 auto;
 }
 .logo{
 	background-color: #292929;
-	margin-left: 3em;
+	margin-left: 1.5em;
+	padding-top: 2em;
 	width: 15em;
 }
 .logo-face{
 	width: 15em;	
 	height: auto;
 }
-
-@media only screen and (min-width: 479px) {
 	.container{
-		width: 450px;
+		max-width: 100%;
 	}
+
+/*@media only screen and (min-width: 479px) {
 }
 
 @media only screen and (min-width: 768px){
@@ -422,4 +436,4 @@ margin: 0 auto;
 		width: 1150px;
 	}
 
-}
+}*/
